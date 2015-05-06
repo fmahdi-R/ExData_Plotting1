@@ -5,8 +5,7 @@ plot4 <- function () {
     zipfile <- "./exdata_data_household_power_consumption.zip"
     unzippedf <- unzip(zipfile,list = )
     DT <- fread(unzippedf, na.strings = c("?"))
-    #     MODT <- DT[,mDateTime:=paste(Date,Time)]
-    #     MODT <- DT[,mTime:=strptime(Time,"%H:%M:%S")]
+
 
     #  - Add mDate column to use for subsetting , 
     #  - subset by mDate Feb 01 2007 and Feb 02 2007
